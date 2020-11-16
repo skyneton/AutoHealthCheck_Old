@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이름"
+        android:layout_marginRight="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="70px"
+        android:privateImeOptions="defaultInputmode=korean"
+        android:singleLine="true"
+        android:textSize="60px"
+        android:id="@+id/EdtName"/>
+
+    <EditText
+        android:id="@+id/EdtCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:privateImeOptions="defaultInputmode=english"
+        android:singleLine="true"
+        android:layout_margin="50px"
+        android:hint="인증번호"
+        android:maxLength="6"
+        android:textSize="60px" />
+    <EditText
+        android:id="@+id/GoToUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:privateImeOptions="defaultInputmode=english"
+        android:singleLine="true"
+        android:layout_margin="50px"
+        android:hint="직통 URL"
+        android:textSize="60px" />
+
+    <TimePicker
+        android:layout_gravity="center"
+        android:id="@+id/autoTime"
+        android:timePickerMode="spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="50px"
+        android:gravity="right">
+
+        <Button
+            android:layout_width="300px"
+            android:layout_height="150px"
+            android:layout_marginRight="35px"
+            android:textSize="40px"
+            android:id="@+id/BtnSave"
+            android:text="저장"/>
+
+        <Button
+            android:layout_width="300px"
+            android:layout_height="150px"
+            android:textSize="40px"
+            android:id="@+id/BtnAutoStart"
+            android:text="자동화 시작"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtAlert"
+        android:textColor="#FF0000"
+        android:textSize="40px"
+        android:layout_marginRight="50px"
+        android:layout_marginLeft="50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
